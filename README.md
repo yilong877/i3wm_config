@@ -11,5 +11,8 @@ required softwares:
 - dunst
 - powerline
 - powerline-fonts
-- fcitx5
 - flameshot
+- nodejs
+
+## Warning
+These configures are my backup, please do not use the "install.sh" script which can change your current environment.

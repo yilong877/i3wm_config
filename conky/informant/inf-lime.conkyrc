@@ -16,7 +16,7 @@
 conky.config = {
 --##  Begin Window Settings  #####################
 own_window = true,
-own_window_type = 'desktop',
+own_window_type = 'override',
 own_window_transparent = true,
 own_window_hints = 'undecorated,below,skip_taskbar,skip_pager,sticky',
 own_window_colour = '#000000',
@@ -42,6 +42,8 @@ gap_x = 20,--## left | right
 gap_y = 0,--## up | down
 
 alignment = 'top_right',
+--##set conky ouput to the second mirror.
+xinerama_head = 2,
 --######################  End Window Settings  ###
 --##  Font Settings  #############################
 -- Use Xft (anti-aliased font and stuff)

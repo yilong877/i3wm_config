@@ -224,7 +224,7 @@ func AddTitle()
         call setline(1,"\#!/bin/bash")
         call append(line("."), "")
     elseif expand("%:e") == 'py'
-        call setline(1,"#!/usr/bin/env python")
+        call setline(1,"#!/usr/bin/env python3")
         call append(line("."),"# coding=utf-8")
         call append(line(".")+1, "")
     elseif expand("%:e") == 'cpp'
@@ -461,7 +461,8 @@ let g:webdevicons_enable_airline_statusline=1
 let g:indentLine_enabled=1
 let g:indentLine_char='┊'
 let g:indentLine_color_term=239
-
+" 解决 json,markdown 不显示"“"的问题
+autocmd FileType json,markdown let g:indentLine_conceallevel=0
 
 
 " coc-explorer 相关配置
